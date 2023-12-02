@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Shifters</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body onload="initializeGame()">
+  <div id="wrapper">
+    <h1>Puzzle Shifters</h1>
+    <p>
+      In Puzzle Shifters, your objective is to rearrange its fifteen tiles by continuously sliding them into the vacant spot. Can you figure it out swiftly?
+    </p>
+    <span id="moves">Total Moves: 0</span>
+    <span id="clock"><br><br>Clock: Will Start after you hit shuffle</span>
+
+    <span id="win"></span>
+
+    <select id="characters" name="characters" title="Backgrounds" onchange="changeBackground()">
+      <option value="bowser" id="bowser">Bowser</option>
+      <option value="pikachu" id="pikachu">Pikachu</option>
+      <option value="charizard" id="charizard">Charizard</option>
+      <option value="dragonair" id="dragonair">Dragonair</option>
+      <option value="dragonite" id="dragonite">Dragonite</option>
+      <option value="mario" id="mario">Mario</option>
+      <option value="luigi" id="luigi">Luigi</option>
+      <option value="toad" id="toad">Toad</option>
+    </select>
+
+    <div id="main">
+      <div id="one" class="tile">1</div>
+      <div id="two" class="tile">2</div>
+      <div id="three" class="tile">3</div>
+      <div id="four" class="tile">4</div>
+      <div id="five" class="tile">5</div>
+      <div id="six" class="tile">6</div>
+      <div id="seven" class="tile">7</div>
+      <div id="eight" class="tile">8</div>
+      <div id="nine" class="tile">9</div>
+      <div id="ten" class="tile">10</div>
+      <div id="eleven" class="tile">11</div>
+      <div id="twelve" class="tile">12</div>
+      <div id="thirteen" class="tile">13</div>
+      <div id="fourteen" class="tile">14</div>
+      <div id="fifteen" class="tile">15</div>
+      <div id="sixteen" class="tile"></div>
+    </div>
+
+    <button id="reset" onclick="resetPuzzle()">Reset Puzzle</button>
+    <button id="shuffle" onclick="shuffleBoard()">Shuffle</button>
+
+    <p>
+      American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
+      Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874
+      by Noyes Palmer Chapman, a postmaster in Canastota, New york.
+    </p>
+
+    <p>
+      <a href="http://www.jslint.com/" target="_blank"><img src="jslint.gif" alt="JSLint" /> </a>
+      <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="w3c-css.png" alt="W3C CSS" /> </a>
+      <a href="https://validator.w3.org/" target="_blank"><img src="w3c-xhtml.png" alt="W3C XHTML" /> </a>
+    </p>
+  </div>
+
+  <div id="confetti-wrapper"></div>
+  <script type="text/javascript" src="fifteen.js"></script>
+</body>
+
+</html>
